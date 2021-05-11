@@ -1,0 +1,18 @@
+[{
+    "firstName": "Moshe",
+    "lastName": "Cohen",
+    "age":"33",
+    "city": "Tel-Aviv",
+    "children": "false"
+},
+{"firstName": "Yeuda",
+    "lastName": "Levi",
+    "city": "Jerusalem",
+    "children": "false",
+    "work":"teacher"},
+{
+    "firstName": "Sara",
+    "lastName": "Levi",
+    "age":"",
+    "work":""
+}]

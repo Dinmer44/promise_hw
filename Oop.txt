@@ -1,0 +1,70 @@
+class Animal{
+    
+    constructor(age, hunger, fun){
+        this.age = age
+        this.hunger = hunger
+        this.fun = fun
+
+    }
+    grow(){
+        this.age+=1;
+        console.log(`I am ${age} years old`)
+    }
+}
+
+class Dog extends Animal{
+    bark(){
+        console.log('Waff Waff')
+    }
+
+};
+
+let a = new Animal(10, 10,3);
+console.log(a.age);
+let d = new Dog(2,4,5);
+d.bark();
+
+function Student(name, age,grade) {
+   
+  
+    return{
+        get name (){
+            return name
+        },
+        set name(value){
+            name = value
+        },
+        get age(){
+            return age
+        },
+        set age(value){
+            age= value
+        },
+        get grade(){
+            return grade
+        }
+    }
+
+    
+};
+const st = new Student("Tamar", 10,4);
+console.log(st.age);
+const st2 =  new Student("Shira",18,12);
+//st2.age(19)
+console.log(st2.age)
+
+const Person = {
+    init(name, age){
+        this.name = name;
+        this.age = age;
+        return this
+    }
+}
+Object.assign((Person.prototype,{
+    sayHello(){console.log("Hello")},
+    birthDay(){return Date.toString()}
+}))
+const p = Object.create(Person).init("Moshe", 30);
+
+
+

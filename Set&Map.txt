@@ -1,0 +1,34 @@
+const countProper = (passwordArr) =>{
+    count = 0;
+    let passwordSet = new Set();
+    for(let password of passwordArr){
+        let splitted = password.split(' ');
+        for(let p of splitted){
+            passwordSet.add(p);
+
+        }
+        if(splitted.length===passwordSet.size){
+            count+=1;
+        }
+        passwordSet.clear();
+        
+    }
+
+}
+
+const classMap = (cMap) =>{
+    console.log("size: ", cMap.size)
+    for (let value of cMap.values())
+     {   console.log(value.name) }
+
+
+}
+let studentClass = new Map() 
+studentClass.set('322556418', {name: "Tamar", address: "123 N 1st Ave"})
+studentClass.set('589742136', {name: "Miryam", address: "123 N 1st Ave"})
+studentClass.set('478596214', {name: "David", address: "123 N 1st Ave"})
+
+
+classMap(studentClass)
+let arr=["aa bb cc", "aa bb","aa bb bb cc ee ff"];
+countProper(arr);
